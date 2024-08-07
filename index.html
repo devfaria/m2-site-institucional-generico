@@ -4,32 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Institucional Genérica</title>
+    <link rel="stylesheet" href="src/styles/index.css" />
   </head>
   <body>
     <!-- ====== Header ====== -->
-    <header>
-      <div>
-        <img src="" alt="" />
-        <button>Entrar para próxima turma</button>
+    <header class="site-header">
+      <div class="header-navigation">
+        <img
+          src="src/assets/logo.svg"
+          alt="Logo do site institucional genérico"
+          class="logo"
+        />
+        <button class="btn-primary">Entrar para próxima turma</button>
       </div>
     </header>
-    <main>
+    <main class="main-container">
       <!-- ====== Section Banner ====== -->
-      <section>
-        <div>
+      <section class="banner">
+        <div class="banner-content">
           <h1>Desenvolvendo <span>suas</span> próximas habilidades</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s
           </p>
-          <button>Sobre nós</button>
+          <button class="btn-secondary">Sobre nós</button>
         </div>
       </section>
 
       <!-- ====== Section About ====== -->
-      <section>
-        <div>
+      <section class="about">
+        <div class="about-content">
           <h2>Quem somos nós?</h2>
           <p>
             It is a long established fact that a reader will be distracted by
@@ -41,24 +46,24 @@
       </section>
 
       <!-- ====== Section FAQ ====== -->
-      <section>
-        <div>
+      <section class="faq">
+        <div class="faq-container">
           <!-- LEFT SIDE -->
-          <div>
-            <div>
+          <div class="faq-left">
+            <div class="faq-left-content">
               <h2>Dúvidas frequentes</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <button>Entrar para próxima turma</button>
+              <button class="btn-primary">Entrar para próxima turma</button>
             </div>
           </div>
           <!-- RIGHT SIDE -->
-          <ul>
+          <ul class="faq-right">
             <!-- Question 1 -->
-            <li>
+            <li class="faq-item">
               <h3>Quais matérias vou pagar?</h3>
               <p>
                 It is a long established fact that a reader will be distracted
@@ -68,7 +73,7 @@
               </p>
             </li>
             <!-- Question 2 -->
-            <li>
+            <li class="faq-item">
               <h3>Tenho direito à cancelamento?</h3>
               <p>
                 It is a long established fact that a reader will be distracted
@@ -78,7 +83,7 @@
               </p>
             </li>
             <!-- Question 3 -->
-            <li>
+            <li class="faq-item">
               <h3>O acesso do curso é vitalício?</h3>
               <p>
                 It is a long established fact that a reader will be distracted
@@ -88,7 +93,7 @@
               </p>
             </li>
             <!-- Question 4 -->
-            <li>
+            <li class="faq-item">
               <h3>O acesso do curso é vitalício?</h3>
               <p>
                 It is a long established fact that a reader will be distracted
@@ -102,11 +107,11 @@
       </section>
 
       <!-- ====== Section Comments ====== -->
-      <section>
-        <div>
-          <!-- RIGHT SIDE -->
-          <div>
-            <div>
+      <section class="comments">
+        <div class="comments-container">
+          <!-- LEFT SIDE -->
+          <div class="comments-left">
+            <div class="comments-left-content">
               <h2>O que nossos alunos comentam?</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -115,11 +120,11 @@
               </p>
             </div>
           </div>
-          <!-- LEFT SIDE -->
-          <ul>
+          <!-- RIGHT SIDE -->
+          <ul class="comments-right">
             <!-- Comment 1 -->
-            <li>
-              <div>
+            <li class="comment-item">
+              <div class="comment-author">
                 <h3>Júlia Lima</h3>
                 <p>Aluna na turma 2019</p>
               </div>
@@ -131,8 +136,8 @@
               </p>
             </li>
             <!-- Comment 2 -->
-            <li>
-              <div>
+            <li class="comment-item">
+              <div class="comment-author">
                 <h3>Carlos Ino</h3>
                 <p>Aluno na turma 2020</p>
               </div>
@@ -144,8 +149,8 @@
               </p>
             </li>
             <!-- Comment 3 -->
-            <li>
-              <div>
+            <li class="comment-item">
+              <div class="comment-author">
                 <h3>Camila Dias</h3>
                 <p>Aluna na turma 2019</p>
               </div>
@@ -157,8 +162,8 @@
               </p>
             </li>
             <!-- Comment 4 -->
-            <li>
-              <div>
+            <li class="comment-item">
+              <div class="comment-author">
                 <h3>João Vaz</h3>
                 <p>Aluno na turma 2019</p>
               </div>
@@ -170,8 +175,8 @@
               </p>
             </li>
             <!-- Comment 5 -->
-            <li>
-              <div>
+            <li class="comment-item">
+              <div class="comment-author">
                 <h3>Gio Oliveira</h3>
                 <p>Aluna na turma 2019</p>
               </div>
@@ -188,11 +193,15 @@
     </main>
 
     <!-- ====== Footer ====== -->
-    <footer>
-      <img src="" alt="" />
+    <footer class="site-footer">
+      <img
+        src="src/assets/logo.svg"
+        alt="Logo do site institucional genérico"
+        class="logo"
+      />
     </footer>
 
     <!-- ====== Modal ====== -->
-    <dialog></dialog>
+    <dialog class="modal"></dialog>
   </body>
 </html>

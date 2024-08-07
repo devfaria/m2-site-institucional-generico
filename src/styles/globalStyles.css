@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --brand-color1:#4C6EF5;
+    --brand-color2:#364FC7;
+    --gray-color1:#191C1F;
+    --gray-color2:#212529;
+    --gray-color3:#343A40;
+    --gray-color4:#ADB5BD;
+    --gray-color5:#CED4DA;
+    --gray-color6:#EDF2FF;
+    --gray-color7:#F8F9FA;
+    --font-1: "Inter", sans-serif;
+    --font-weight-title: 600;
+    --font-weight-text: 400;
+  }
