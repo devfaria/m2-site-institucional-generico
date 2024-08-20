@@ -1,3 +1,295 @@
 @import url(globalStyles.css);
 @import url(reset.css);
 
+* {
+    margin: 0 auto;
+}
+
+.site-header {
+    background-color: var(--gray-color1);
+    width: 100%;
+    border-bottom: 0.1875rem solid var(--brand-color1);
+}
+
+.header-navigation {
+    justify-content: space-between;
+    display: flex;
+    padding: 1.25rem;
+}
+
+.btn-primary-black {
+    border: 0.0625rem solid var(--gray-color7);
+    background-color: var(--gray-color1);
+    color: var(--gray-color7);
+    padding: 1.25rem;
+    padding-left: 2.1875rem;
+    padding-right: 2.1875rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.banner {
+    background-color: var(--gray-color2);
+    height: 48.8125rem;
+}
+
+.banner-content {
+    max-width: 78.5rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.banner h1 {
+    margin-bottom: 1.25rem;
+    font-size: 3.25rem;
+    color: var(--gray-color6);
+}
+
+.banner h1 span {
+    color: var(--brand-color1);
+}
+
+.banner p {
+    margin-bottom: 1.25rem;
+    max-width: 33.125rem;
+    color: var(--gray-color4);
+}
+
+.btn-secondary {
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    background-color: var(--brand-color1);
+    border: none;
+    color: var(--gray-color7);
+    cursor: pointer;
+}
+
+.about {
+    background-color: var(--gray-color1);
+    height: 17.75rem;
+}
+
+.about-content {
+    max-width: 78.5rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 3.5rem;
+}
+
+.about-content h2 {
+    color: var(--gray-color6);
+    font-weight: var(--font-weight-title);
+    width: 38.75rem;
+    max-width: 78.5rem;
+    font-size: 2.5rem;
+}
+
+.about-content p {
+    color: var(--gray-color5);
+    font-weight: var(--font-weight-text);
+    width: 36.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 78.5rem;
+}
+
+.faq {
+    background-color: var(--gray-color2);
+    height: 70.75rem;
+    display: flex;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 78.5rem;
+    width: 100%;
+}
+
+.faq-left {
+    list-style: none;
+    max-width: 36.25rem;
+    margin-top: 5rem;
+    margin-left: 0;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-left-content h2 {
+    font-weight: var(--font-weight-title);
+    font-size: 2.5rem;
+    color: var(--gray-color6);
+}
+
+.faq-left-content p {
+    margin-top: 1.875rem;
+    line-height: 1.875rem;
+    max-width: 30rem;
+    color: var(--gray-color4);
+    font-weight: var(--font-weight-text);
+    font-size: 1.25rem;
+}
+
+.btn-primary-blue {
+    height: 3.75rem;
+    width: 16.625rem;
+    background-color: var(--brand-color1);
+    color: var(--gray-color7);
+    border: none;
+    margin-top: 1.875rem;
+    cursor: pointer;
+}
+
+.faq-right {
+    list-style: none;
+    max-width: 36.25rem;
+    gap: 3.75rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    text-align: center;
+}
+
+.faq-item h3 {
+    color: var(--gray-color6);
+    font-weight: var(--font-weight-title);
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.faq-item p {
+    color: var(--gray-color4);
+    font-weight: var(--font-weight-text);
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.875rem;
+}
+
+.header-navigation, .about-content, .faq-container {
+    flex-wrap: wrap;
+}
+
+.comments {
+    background-color: var(--gray-color2);
+    height: 86.6875rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.comments-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 78.5rem;
+    width: 100%;
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+}
+
+.comments-left {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 2;
+    background-color: var(--brand-color1);
+    height: 27.6875rem;
+    max-width: 30.8125rem;
+}
+
+.comments-left-content {
+    max-width: 80%;
+    color: var(--gray-color7);
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.comments-left-content h2 {
+    max-width: 19.3125rem; 
+    font-size: 2.5rem; 
+    font-weight: var(--font-weight-text);
+    line-height: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.comments-left-content p {
+    color: var(--gray-color7);
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-text);
+}
+
+.comments-right {
+    flex: 0 0 50%;
+    list-style: none;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 9.2rem;
+}
+
+.comment-text {
+    line-height: 1.6875rem; 
+    font-weight: var(--font-weight-text);
+    color: var(--gray-color5);
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+.comment-author {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    width: 12.5rem;
+    min-width: 12.5rem;
+}
+
+.comment-author h3 {
+    white-space: nowrap;
+    color: var(--gray-color6);
+    font-size: 2rem;
+    line-height: 3.1875rem;
+    font-weight: var(--font-weight-title);
+}
+
+.comment-author p {
+    white-space: nowrap;
+    font-size: 1rem;
+    color: var(--gray-color4);
+    font-weight: var(--font-weight-text);
+    line-height: 1.5rem;
+}
+
+.site-footer {
+    height: 102px;
+    background-color: var(--gray-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
