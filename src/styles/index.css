@@ -1,10 +1,6 @@
 @import url(globalStyles.css);
 @import url(reset.css);
 
-* {
-    margin: 0 auto;
-}
-
 .site-header {
     background-color: var(--gray-color1);
     width: 100%;
@@ -15,18 +11,29 @@
 }
 
 .header-navigation {
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 1.25rem;
+}
+
+.header-navigation img {
+    margin-right: auto; 
+}
+
+.header-navigation .btn-primary-black {
+    margin-left: auto; 
+}
+
+.header-navigation > * {
+    margin: 0 13rem; 
 }
 
 .btn-primary-black {
     border: 0.0625rem solid var(--gray-color7);
     background-color: var(--gray-color1);
     color: var(--gray-color7);
-    padding: 1.25rem;
-    padding-left: 2.1875rem;
-    padding-right: 2.1875rem;
+    padding: 1.25rem 2.1875rem;
     cursor: pointer;
     font-weight: 600;
 }
@@ -107,8 +114,9 @@
 
 .faq {
     background-color: var(--gray-color2);
-    height: 70.75rem;
+    padding: 2rem 0; 
     display: flex;
+    justify-content: center; 
 }
 
 .faq-container {
@@ -122,7 +130,6 @@
     list-style: none;
     max-width: 36.25rem;
     margin-top: 5rem;
-    margin-left: 0;
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
@@ -130,7 +137,7 @@
     top: 12rem;
 }
 
-.faq-left-content{
+.faq-left-content {
     margin-bottom: 5rem;
 }
 
@@ -148,8 +155,6 @@
     font-weight: var(--font-weight-text);
     font-size: 1.25rem;
 }
-
-
 
 .btn-primary-blue {
     height: 3.75rem;
@@ -190,15 +195,11 @@
     line-height: 1.875rem;
 }
 
-.header-navigation, .about-content, .faq-container {
-    flex-wrap: wrap;
-}
-
 .comments {
     background-color: var(--gray-color2);
-    height: 86.6875rem;
+    padding: 2rem 0; /* Adicionado padding para espaçamento interno */
     display: flex;
-    align-items: flex-start;
+    justify-content: center; /* Centraliza o conteúdo */
 }
 
 .comments-container {
@@ -206,8 +207,7 @@
     justify-content: space-between;
     max-width: 78.5rem;
     width: 100%;
-    margin-bottom: 3.5rem;
-    margin-top: 3.5rem;
+    margin: 3.5rem 0;
 }
 
 .comments-left {
@@ -229,8 +229,8 @@
     color: var(--gray-color7);
     display: flex;
     flex-direction: column;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 0;
+    margin-left: 3.5rem;
 }
 
 .comments-left-content h2 {
@@ -246,6 +246,8 @@
     line-height: 1.875rem;
     font-size: 1.25rem;
     font-weight: var(--font-weight-text);
+    max-width: 22rem;
+    
 }
 
 .comments-right {
