@@ -9,6 +9,9 @@
     background-color: var(--gray-color1);
     width: 100%;
     border-bottom: 0.1875rem solid var(--brand-color1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header-navigation {
@@ -123,6 +126,12 @@
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 12rem;
+}
+
+.faq-left-content{
+    margin-bottom: 5rem;
 }
 
 .faq-left-content h2 {
@@ -139,6 +148,8 @@
     font-weight: var(--font-weight-text);
     font-size: 1.25rem;
 }
+
+
 
 .btn-primary-blue {
     height: 3.75rem;
@@ -208,6 +219,9 @@
     background-color: var(--brand-color1);
     height: 27.6875rem;
     max-width: 30.8125rem;
+    position: sticky;
+    top: 10rem;
+    margin-bottom: 15rem;
 }
 
 .comments-left-content {
