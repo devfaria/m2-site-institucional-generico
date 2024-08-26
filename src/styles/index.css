@@ -12,21 +12,21 @@
 
 .header-navigation {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 1.25rem;
 }
 
 .header-navigation img {
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .header-navigation .btn-primary-black {
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .header-navigation > * {
-    margin: 0 13rem; 
+    margin: 0 13rem;
 }
 
 .btn-primary-black {
@@ -114,9 +114,9 @@
 
 .faq {
     background-color: var(--gray-color2);
-    padding: 2rem 0; 
+    padding: 2rem 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .faq-container {
@@ -197,9 +197,9 @@
 
 .comments {
     background-color: var(--gray-color2);
-    padding: 2rem 0; /* Adicionado padding para espaçamento interno */
+    padding: 2rem 0;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
+    justify-content: center;
 }
 
 .comments-container {
@@ -234,8 +234,8 @@
 }
 
 .comments-left-content h2 {
-    max-width: 19.3125rem; 
-    font-size: 2.5rem; 
+    max-width: 19.3125rem;
+    font-size: 2.5rem;
     font-weight: var(--font-weight-text);
     line-height: 4rem;
     margin-bottom: 2.5rem;
@@ -247,7 +247,6 @@
     font-size: 1.25rem;
     font-weight: var(--font-weight-text);
     max-width: 22rem;
-    
 }
 
 .comments-right {
@@ -265,7 +264,7 @@
 }
 
 .comment-text {
-    line-height: 1.6875rem; 
+    line-height: 1.6875rem;
     font-weight: var(--font-weight-text);
     color: var(--gray-color5);
     font-size: 1.125rem;
@@ -297,7 +296,7 @@
 }
 
 .site-footer {
-    height: 102px;
+    height: 6.375rem;
     background-color: var(--gray-color1);
     display: flex;
     justify-content: center;
@@ -308,4 +307,89 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+dialog {
+    width: 31.5rem;
+    height: 26rem;
+    border: 0.125rem solid var(--brand-color1);
+    background-color: var(--gray-color2);
+    padding: 1rem;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8%;
+    width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.125rem;
+}
+
+.modalText {
+    color: var(--gray-color4);
+    font-weight: var(--font-weight-text);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 6%;
+    width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.125rem;
+}
+
+.modalTitle {
+    color: var(--gray-color7);
+    font-weight: var(--font-weight-title);
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+
+#closeModal {
+    background-color: var(--gray-color3);
+    color: var(--gray-color4);
+    height: 2rem;
+    width: 2.375rem;
+    border-radius: 0.25rem;
+}
+
+.modalInputEmail {
+    background-color: var(--gray-color1);
+    height: 3.75rem;
+    border: none;
+    margin-top: 6%;
+    display: flex;
+    width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--gray-color4);
+    font-size: 1.25rem;
+    padding: 0.125rem;
+}
+
+input.modalInputEmail::placeholder {
+    color: var(--gray-color4);
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-left: 1.25rem; 
+}
+
+.modalButton {
+    height: 3.75rem;
+    background-color: var(--brand-color1);
+    color: var(--gray-color7);
+    margin-top: 6%;
+    width: 28rem;
+    margin-left: 1.625rem;
+    border: none;
+    padding: 0.125rem;
 }

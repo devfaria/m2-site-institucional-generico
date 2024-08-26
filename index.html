@@ -15,7 +15,9 @@
           alt="Logo do site institucional genérico"
           class="logo"
         />
-        <button class="btn-primary-black">Entrar para próxima turma</button>
+        <button id="showMessage" class="btn-primary-black">
+          Entrar para próxima turma
+        </button>
       </div>
     </header>
     <main class="main-container">
@@ -57,7 +59,7 @@
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </p>
-              <button class="btn-primary-blue">
+              <button id="showMessageTwo" class="btn-primary-blue">
                 Entrar para próxima turma
               </button>
             </div>
@@ -204,7 +206,19 @@
     </footer>
 
     <!-- ====== Modal ====== -->
-    <dialog class="modal"></dialog>
+    <dialog id="modalContainer">
+      <div id="conteudo" class="modalHeader">
+        <h2 class="modalTitle">Cadastro</h2>
+        <button id="closeModal">X</button>
+      </div>
+      <p class="modalText">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s
+      </p>
+      <input type="email" class="modalInputEmail" placeholder="Digitar email" />
+      <button class="modalButton">Entrar na lista para próxima turma</button>
+    </dialog>
     <script src="src/scripts/index.js"></script>
   </body>
 </html>
