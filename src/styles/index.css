@@ -393,3 +393,89 @@ input.modalInputEmail::placeholder {
     border: none;
     padding: 0.125rem;
 }
+
+
+@media (max-width: 425px) {
+    .site-header{
+        width: 62.5rem;
+    }
+    .banner{
+        width: 62.5rem;
+    }
+    .about{
+        width: 62.5rem;
+    }
+    .faq{
+        width: 62.5rem;
+    }
+    .comments{
+        width: 62.5rem;
+    }
+    .site-footer{
+        width: 62.5rem;
+    }
+  }
+  
+@media (max-width: 1024px) {
+    .header-navigation {
+        padding: clamp(1rem, 2vw, 1.25rem);
+    }
+
+    .banner h1 {
+        font-size: clamp(2.5rem, 4vw, 3rem);
+    }
+
+    .banner p {
+        font-size: clamp(1rem, 3vw, 1.125rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .site-header{
+        width: 62.5rem;
+    }
+    .banner{
+        width: 62.5rem;
+    }
+    .about{
+        width: 62.5rem;
+    }
+    .faq{
+        width: 62.5rem;
+    }
+    .comments{
+        width: 62.5rem;
+    }
+    .site-footer{
+        width: 62.5rem;
+    }
+    .header-navigation {
+        padding: clamp(0.75rem, 3vw, 1rem);
+    }
+    
+    .header-navigation img {
+        margin: auto;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+    .banner h1 {
+        font-size: clamp(2rem, 5vw, 2.5rem);
+        padding: clamp(0.75rem, 3vw, 1rem);
+    }
+
+    .banner p {
+        font-size: clamp(0.875rem, 3vw, 1.125rem);
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .faq-left, .faq-right, .comments-left, .comments-right {
+        max-width: 100%;
+    }
+}
+
