@@ -3,30 +3,23 @@
 
 .site-header {
     background-color: var(--gray-color1);
-    width: 100%;
     border-bottom: 0.1875rem solid var(--brand-color1);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
+    width: 100%;
 }
 
 .header-navigation {
     display: flex;
+    padding: 1.25rem;
+    max-width: 78.5rem;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem;
-}
-
-.header-navigation img {
-    margin-right: auto;
-}
-
-.header-navigation .btn-primary-black {
-    margin-left: auto;
-}
-
-.header-navigation > * {
-    margin: 0 13rem;
+    height: 100%;
 }
 
 .btn-primary-black {
@@ -36,6 +29,7 @@
     padding: 1.25rem 2.1875rem;
     cursor: pointer;
     font-weight: 600;
+    font-family: var(--font-1);
 }
 
 .banner {
@@ -56,8 +50,9 @@
 
 .banner h1 {
     margin-bottom: 1.25rem;
-    font-size: 3.25rem;
+    font-size: clamp(1rem, 0.135rem + 3.462vw, 3.25rem);
     color: var(--gray-color6);
+    font-family: var(--font-1);
 }
 
 .banner h1 span {
@@ -66,8 +61,10 @@
 
 .banner p {
     margin-bottom: 1.25rem;
-    max-width: 33.125rem;
+    max-width: 38.125rem;
     color: var(--gray-color4);
+    font-family: var(--font-1);
+    font-size: clamp(1rem, 0.904rem + 0.385vw, 1.25rem);
 }
 
 .btn-secondary {
@@ -77,6 +74,7 @@
     border: none;
     color: var(--gray-color7);
     cursor: pointer;
+    font-family: var(--font-1);
 }
 
 .about {
@@ -99,17 +97,19 @@
     font-weight: var(--font-weight-title);
     width: 38.75rem;
     max-width: 78.5rem;
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
+    font-family: var(--font-1);
 }
 
 .about-content p {
     color: var(--gray-color5);
     font-weight: var(--font-weight-text);
     width: 36.25rem;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.904rem + 0.385vw, 1.25rem);
     line-height: 1.5;
     text-align: justify;
     max-width: 78.5rem;
+    font-family: var(--font-1);
 }
 
 .faq {
@@ -129,22 +129,19 @@
 .faq-left {
     list-style: none;
     max-width: 36.25rem;
-    margin-top: 5rem;
     margin-bottom: auto;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     position: sticky;
     top: 12rem;
 }
 
-.faq-left-content {
-    margin-bottom: 5rem;
-}
-
 .faq-left-content h2 {
     font-weight: var(--font-weight-title);
-    font-size: 2.5rem;
+    font-size: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
     color: var(--gray-color6);
+    font-family: var(--font-1);
 }
 
 .faq-left-content p {
@@ -153,12 +150,15 @@
     max-width: 30rem;
     color: var(--gray-color4);
     font-weight: var(--font-weight-text);
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.904rem + 0.385vw, 1.25rem);
+    font-family: var(--font-1);
+ 
 }
 
 .btn-primary-blue {
     height: 3.75rem;
-    width: 16.625rem;
+    width: 100%;
+    max-width: 20rem;
     background-color: var(--brand-color1);
     color: var(--gray-color7);
     border: none;
@@ -170,7 +170,7 @@
     list-style: none;
     max-width: 36.25rem;
     gap: 3.75rem;
-    margin-top: auto;
+    margin-top: 3rem;
     margin-bottom: auto;
     display: flex;
     flex-direction: column;
@@ -183,16 +183,18 @@
 .faq-item h3 {
     color: var(--gray-color6);
     font-weight: var(--font-weight-title);
-    font-size: 2rem;
+    font-size: clamp(1rem, 0.615rem + 1.538vw, 2rem);
     margin-bottom: 2.5rem;
+    font-family: var(--font-1);
 }
 
 .faq-item p {
     color: var(--gray-color4);
     font-weight: var(--font-weight-text);
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.904rem + 0.385vw, 1.25rem);
     text-align: left;
     line-height: 1.875rem;
+    font-family: var(--font-1);
 }
 
 .comments {
@@ -221,7 +223,7 @@
     max-width: 30.8125rem;
     position: sticky;
     top: 10rem;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 
 .comments-left-content {
@@ -234,19 +236,21 @@
 }
 
 .comments-left-content h2 {
-    max-width: 19.3125rem;
-    font-size: 2.5rem;
+    max-width: 21.3125rem;
+    font-size: clamp(1rem, 0.423rem + 2.308vw, 2.5rem);
     font-weight: var(--font-weight-text);
     line-height: 4rem;
     margin-bottom: 2.5rem;
+    font-family: var(--font-1);
 }
 
 .comments-left-content p {
     color: var(--gray-color7);
     line-height: 1.875rem;
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.904rem + 0.385vw, 1.25rem);
     font-weight: var(--font-weight-text);
     max-width: 22rem;
+    font-family: var(--font-1);
 }
 
 .comments-right {
@@ -260,15 +264,16 @@
 .comment-item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 9.2rem;
+    margin-bottom: 5rem;
 }
 
 .comment-text {
     line-height: 1.6875rem;
     font-weight: var(--font-weight-text);
     color: var(--gray-color5);
-    font-size: 1.125rem;
+    font-size: clamp(1rem, 0.952rem + 0.192vw, 1.125rem);
     margin: 0;
+    font-family: var(--font-1);
 }
 
 .comment-author {
@@ -282,17 +287,19 @@
 .comment-author h3 {
     white-space: nowrap;
     color: var(--gray-color6);
-    font-size: 2rem;
+    font-size: clamp(1rem, 0.615rem + 1.538vw, 2rem);
     line-height: 3.1875rem;
     font-weight: var(--font-weight-title);
+    font-family: var(--font-1);
 }
 
 .comment-author p {
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: clamp(1rem, 1rem + 0vw, 1rem);
     color: var(--gray-color4);
     font-weight: var(--font-weight-text);
     line-height: 1.5rem;
+    font-family: var(--font-1);
 }
 
 .site-footer {
@@ -328,7 +335,7 @@ dialog::backdrop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 8%;
+    margin-top: 5%;
     width: 28rem;
     margin-left: auto;
     margin-right: auto;
@@ -338,20 +345,22 @@ dialog::backdrop {
 .modalText {
     color: var(--gray-color4);
     font-weight: var(--font-weight-text);
-    font-size: 1rem;
+    font-size: clamp(1rem, 1rem + 0vw, 1rem);
     line-height: 1.5rem;
     margin-top: 6%;
     width: 28rem;
     margin-left: auto;
     margin-right: auto;
     padding: 0.125rem;
+    font-family: var(--font-1);
 }
 
 .modalTitle {
     color: var(--gray-color7);
     font-weight: var(--font-weight-title);
-    font-size: 2rem;
+    font-size: clamp(1rem, 0.615rem + 1.538vw, 2rem);
     line-height: 3.2rem;
+    font-family: var(--font-1);
 }
 
 #closeModal {
@@ -372,13 +381,14 @@ dialog::backdrop {
     margin-left: auto;
     margin-right: auto;
     color: var(--gray-color4);
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.904rem + 0.385vw, 1.25rem);
     padding: 0.125rem;
+    font-family: var(--font-1);
 }
 
 input.modalInputEmail::placeholder {
     color: var(--gray-color4);
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 0.952rem + 0.192vw, 1.125rem);
     line-height: 1.875rem;
     padding-left: 1.25rem; 
 }
@@ -389,93 +399,295 @@ input.modalInputEmail::placeholder {
     color: var(--gray-color7);
     margin-top: 6%;
     width: 28rem;
-    margin-left: 1.625rem;
+    margin-left: 0.6rem;
     border: none;
     padding: 0.125rem;
 }
 
 
-@media (max-width: 425px) {
-    .site-header{
-        width: 62.5rem;
-    }
-    .banner{
-        width: 62.5rem;
-    }
-    .about{
-        width: 62.5rem;
-    }
-    .faq{
-        width: 62.5rem;
-    }
-    .comments{
-        width: 62.5rem;
-    }
-    .site-footer{
-        width: 62.5rem;
-    }
-  }
-  
-@media (max-width: 1024px) {
-    .header-navigation {
-        padding: clamp(1rem, 2vw, 1.25rem);
-    }
 
+@media(max-width: 1024px){
     .banner h1 {
-        font-size: clamp(2.5rem, 4vw, 3rem);
+        max-width: 500px;
     }
 
     .banner p {
-        font-size: clamp(1rem, 3vw, 1.125rem);
+        max-width: 650px;
+    }
+
+    .about-content h2 {
+        margin-left: 1.5rem;
+        max-width: 300px;
+    }
+    
+    .about-content p {
+        margin-right: 1.5rem;
+        max-width: 450px;
+    }
+
+    .faq-left{
+        margin-left: 1.5rem;
+    }
+
+    .faq-right{
+        margin-right: 1.5rem;
+    }
+
+    .faq-right p{
+        max-width: 450px;
+    }
+
+    .comment-author{
+        flex-direction: row;
+    }
+
+    .comment-author p{
+        margin-top: 0.9rem;
+        margin-left: 1rem;
+    }
+
+    .comment-item{
+        flex-direction: column;
+        margin-left: 1.5rem;
+        max-width: 450px;
+    }
+
+    .comments-left {
+        max-width: 29rem;
+        margin-right: 1.5rem;
+    }
+    
+    .comments-left-content {
+        max-width: 80%;
+        color: var(--gray-color7);
+        display: flex;
+        flex-direction: column;
+        margin: auto 0;
+        margin-left: 3.5rem;
     }
 }
 
-@media (max-width: 768px) {
-    .site-header{
-        width: 62.5rem;
-    }
-    .banner{
-        width: 62.5rem;
-    }
-    .about{
-        width: 62.5rem;
-    }
-    .faq{
-        width: 62.5rem;
-    }
-    .comments{
-        width: 62.5rem;
-    }
-    .site-footer{
-        width: 62.5rem;
-    }
-    .header-navigation {
-        padding: clamp(0.75rem, 3vw, 1rem);
-    }
-    
-    .header-navigation img {
-        margin: auto;
+@media(max-width: 768px) {
+    body {
+        width: fit-content
     }
 
-    .banner {
-        height: auto;
+    .site-header {
+        background-color: var(--gray-color1);
+        border-bottom: 0.1875rem solid var(--brand-color1);
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+    }
+
+    .header-navigation {
+        max-width: 43.75rem;
     }
 
     .banner h1 {
-        font-size: clamp(2rem, 5vw, 2.5rem);
-        padding: clamp(0.75rem, 3vw, 1rem);
+        max-width: 50rem;
+        font-size: clamp(3rem, -3.571rem + 9.524vw, 5rem);
     }
 
     .banner p {
-        font-size: clamp(0.875rem, 3vw, 1.125rem);
+        max-width: 31.25rem;
+        margin-top: 2.5rem;
     }
 
     .about-content {
         flex-direction: column;
+        padding: clamp(1rem, -3.2176rem + 14.1176vw, 4rem);
     }
 
-    .faq-left, .faq-right, .comments-left, .comments-right {
-        max-width: 100%;
+    .about-content h2 {
+        font-size: clamp(2rem, -3.571rem + 9.524vw, 3rem);
+        width: 100%;
     }
+
+    .about-content p {
+        align-items: center;
+        font-size: clamp(1.2rem, -3.571rem + 9.524vw, 2rem);
+        width: 100%;
+        max-width: 43.75rem;
+    }
+
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-left {
+        position: static;
+        max-width: 43.75rem;
+
+    }
+
+    .faq-left-content h2 {
+        font-size: clamp(2rem, -3.571rem + 9.524vw, 3rem);
+        text-align: center;
+    }
+
+    .faq-left-content p {
+        font-size: clamp(1.2rem, -3.571rem + 9.524vw, 2rem);
+        max-width: 43.75rem;
+        padding: 0 1rem;
+    }
+
+    .btn-primary-blue {
+        max-width: 100%;
+        width: 95%;
+        font-size: clamp(1.2rem, -3.571rem + 9.524vw, 1.5rem);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+
+    .faq-right {
+        max-width: 43.75rem;
+        width: 100%;
+    }
+
+    .faq-item h3 {
+        font-size: clamp(1.5rem, -3.571rem + 9.524vw, 2rem);
+        text-align: center;
+        align-items: center;
+        margin-left: 1.5625rem;
+        padding: 0 1rem;
+    }
+
+    .faq-item p {
+        max-width: 43.75rem;
+        text-align: left;
+        font-size: clamp(1.2rem, -3.571rem + 9.524vw, 2rem);
+        margin-left: 1.5625rem;
+        padding: 0 1rem;
+    }
+
+   .comments-container{
+        flex-direction: column-reverse;
+   }
+
+   .comments-left-content h2{
+        font-size: clamp(2rem, -3.571rem + 9.524vw, 3rem);
+        max-width: 43.75rem;
+
+   }
+   .comments-left-content p{
+    max-width: 43.75rem;
+
 }
 
+   .comments-left{
+        position: static;
+        max-width: 43.75rem;
+        max-height: 20rem;
+        margin-top: 8rem;
+        margin-left: 1.5625rem;
+   }
+
+   .comment-text{
+        max-width: 43.75rem;
+        width: 100%;
+   }
+}
+
+@media(max-width: 426px) {
+        body {
+           
+            width: fit-content
+        }
+
+        .header-navigation {
+            max-width: 90%; 
+            margin: 0 auto; 
+        }
+    
+        .header-navigation img{
+            width: 20rem;
+        }
+    
+        .btn-primary-black {
+            display: none;
+        }
+
+        .banner{
+            height: 65rem;
+        }
+    
+        .banner-content {
+            width: 100%; 
+            padding: 0 1rem; 
+        }
+        .banner h1{
+            font-size: clamp(3rem, 0.423rem + 2.308vw, 3.5rem);
+            margin-top: 10rem;
+            margin-bottom: 5rem;
+        }
+
+        .banner p {
+            max-width: 92%;
+            text-align: center;
+            font-size: clamp(1.5rem, -3.571rem + 9.524vw, 1.4rem);
+        }
+
+        .btn-secondary{
+            margin-bottom: 5rem;
+            height: 5rem;
+            width: 10rem;
+            font-size: clamp(1.4rem, 0.423rem + 2.308vw, 1.8rem);
+            margin-top: 5rem;
+        }
+
+        .about{
+            height: 18rem;
+        }
+
+
+        .about-content p{
+            width: 32rem;
+            max-width: 100%;
+            margin-bottom: 2rem;
+            margin-left: auto;
+        }
+        
+       .faq-left-content p{
+            width: 35rem;
+            max-width: 100%;
+       }
+       
+       .btn-primary-blue{
+        max-width: 100%;
+        width: 32rem;
+        margin-left: 1rem;
+        text-align: center;
+       }
+
+       .comments-left{
+        margin-bottom: 10rem;
+       }
+
+       .comments-left h2{
+        max-width: 70%;
+        margin-left: 4rem;
+        
+       }
+
+       .comments-left p {
+        max-width: 70%;
+        margin-left: 4rem;
+        
+       }
+
+       .comment-text{
+        width: 33.5rem;
+       }
+    
+    
+    
+        
+}
+
+    
